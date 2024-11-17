@@ -37,7 +37,7 @@ const workerConfig = {
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+        Authorization: '7RLv2nXmdiBPiBkYGdSVh9ulwgU4EhFYrF9E2pFB',
       },
       // [OPTIONAL] body to be sent
       body: 'Hello, world!',
