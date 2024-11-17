@@ -2,7 +2,7 @@ const pageConfig = {
   title: "lyc8503's Status Page",
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'mailto:me@lyc8503.site', label: 'Email Me', highlight: true },
+    { link: '15955434043@163.con', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -11,16 +11,14 @@ const workerConfig = {
   passwordProtection: 'username:password',
   monitors: [
     {
-      id: 'google_monitor',
-      name: 'My Google Monitor',
+      id: 'nbtca.space',
+      name: 'nbtca.space',
       method: 'GET',
-      target: 'https://www.google.com'
-    },
-    {
-      id: 'ssh_monitor',
-      name: 'Example SSH Monitor',
-      method: 'TCP_PING',
-      target: '1.2.3.4:22'
+      target: 'https://nbtca.space',
+      tooltip: '监控nbtca.link',
+      statusPageLink: 'https://nbtca.space',
+      expectedCodes: [200],
+      timeout: 10000,
     },
   ],
   callbacks: {
