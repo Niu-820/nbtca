@@ -1,5 +1,5 @@
 const pageConfig = {
-  title: "lyc8503's Status Page",
+  title: "nbtca's Status Page",
   links: [
     { link: 'https://github.com/lyc8503', label: 'GitHub' },
     { link: '15955434043@163.con', label: 'Email Me', highlight: true },
@@ -8,7 +8,7 @@ const pageConfig = {
 
 const workerConfig = {
   kvWriteCooldownMinutes: 3,
-  passwordProtection: 'username:password',
+  passwordProtection: 'admin:123456',
   monitors: [
     {
       id: 'nbtca.space',
@@ -17,6 +17,16 @@ const workerConfig = {
       target: 'https://nbtca.space',
       tooltip: '监控nbtca.link',
       statusPageLink: 'https://nbtca.space',
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
+      id: 'webhook.nbtca.space',
+      name: 'webhook.nbtca.space',
+      method: 'GET',
+      target: 'https://webhook.nbtca.space/',
+      tooltip: '监控webhook.nbtca.link',
+      statusPageLink: 'https://webhook.nbtca.space/',
       expectedCodes: [200],
       timeout: 10000,
     },
