@@ -8,7 +8,6 @@ const pageConfig = {
 
 const workerConfig = {
   kvWriteCooldownMinutes: 3,
-  passwordProtection: 'admin:123456',
   monitors: [
     {
       id: 'nbtca.space',
