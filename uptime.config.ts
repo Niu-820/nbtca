@@ -39,6 +39,16 @@ const workerConfig = {
       expectedCodes: [200],
       timeout: 10000,
     },
+    {
+      id: 'mc.nbtca.space',
+      name: 'mc.nbtca.space',
+      method: 'TCP',  // Using TCP method instead of GET
+      target: 'mc.nbtca.space',
+      tooltip: '监控 nbtca.space 的TCP端口',
+      statusPageLink: 'https://mc.nbtca.space',
+      port: 25565,  // TCP端口，通常是HTTP的80或HTTPS的443，取决于监控目标
+      timeout: 10000,
+    },
   ],
   callbacks: {
     onStatusChange: async (
